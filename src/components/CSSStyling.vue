@@ -41,7 +41,6 @@ export default {
 .square {
   position:relative;
   border-radius: 10px;
-  /* background: linear-gradient(#69c4e8, #9cd3d0); */
   background-color: #9bd5e4;
   padding: 20px; 
   width: 500px;
