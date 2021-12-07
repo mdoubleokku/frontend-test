@@ -5,7 +5,7 @@
       <v-col><h2>MAQE Forum</h2></v-col>
     </v-row>
     <v-row>
-      <v-col><span>Your current time zone is: {{ timesonze }}</span></v-col>
+      <v-col><span>Your current time zone is: {{ timezone }}</span></v-col>
     </v-row>
     <v-row v-for="(item, index) in forumList" v-bind:key="item.id">
       <v-col>
@@ -47,7 +47,7 @@
 <script>
 export default {
   data: () => ({
-    timesonze: 'Asia/Bangkok',
+    //timezone: 'Asia/Bangkok',
     authorsList: [
     {
         "id": 1,
@@ -264,6 +264,10 @@ export default {
       }
         return returnArray
       }, [])
+    },
+    timezone () {
+      console.log(Intl.DateTimeFormat().resolvedOptions().timeZone, 'Intl.DateTimeFormat().resolvedOptions().timeZone')
+      return Intl.DateTimeFormat().resolvedOptions().timeZone
     }
   },
   methods: {
