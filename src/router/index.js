@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Vuetify from 'vuetify'
 import TemplateForum from '@/components/TemplateForum'
 import CSSStyling from '@/components/CSSStyling'
+import VariantsSelector from '@/components/VariantsSelector'
 
 Vue.use(Router)
 Vue.use(Vuetify)
@@ -15,9 +16,14 @@ export default new Router({
       component: TemplateForum
     },
     {
-      path: '/',
+      path: '/CSSStyling',
       name: 'CSSStyling',
       component: CSSStyling
     }, 
+    {
+      path: '/',
+      name: 'VariantsSelector',
+      component: VariantsSelector
+    },
   ]
 })

@@ -2,7 +2,7 @@
   <v-container class="py-8 px-16" fluid>
     <div>
     <v-row>
-      <v-col><h2>MAQE Shirt</h2></v-col>
+      <v-col><h2>Shirt</h2></v-col>
     </v-row>
     <hr/>
     <div v-for="items in options" :key="items.slug">
